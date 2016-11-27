@@ -1,4 +1,4 @@
-@import '_mixins.scss',
+@import 'compass/css3', '_mixins',
 'https://fonts.googleapis.com/css?family=Raleway:400,500';
 html{
 	background-image:url('../img/background-vector.jpg');
@@ -13,12 +13,14 @@ html{
 		padding:20px;
 		width:80%;
 		@include mobile{
+			margin:0;
+			padding:10px;
 			width:100%;
 		}
 		.site-container{
 			margin:0 auto;
 			@include mobile{
-				width:100%;
+				width:95%;
 			}
 			.description, .quote{
 				display:block;
@@ -39,6 +41,7 @@ html{
 					padding:20px;
 					width:80%;
 					@include mobile{
+						padding:10px;
 						width:95%;
 					}
 					p{

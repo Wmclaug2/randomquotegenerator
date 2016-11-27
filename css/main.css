@@ -15,6 +15,8 @@ html body {
 }
 @media only screen and (min-width: 0px) and (max-width: 825px) {
   html body {
+    margin: 0;
+    padding: 10px;
     width: 100%;
   }
 }
@@ -23,7 +25,7 @@ html body .site-container {
 }
 @media only screen and (min-width: 0px) and (max-width: 825px) {
   html body .site-container {
-    width: 100%;
+    width: 95%;
   }
 }
 html body .site-container .description, html body .site-container .quote {
@@ -50,6 +52,7 @@ html body .site-container .quote .quote-wrapper {
 }
 @media only screen and (min-width: 0px) and (max-width: 825px) {
   html body .site-container .quote .quote-wrapper {
+    padding: 10px;
     width: 95%;
   }
 }
