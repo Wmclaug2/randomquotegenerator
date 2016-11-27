@@ -12,8 +12,14 @@ html{
 		margin:10px auto;
 		padding:20px;
 		width:80%;
+		@include mobile{
+			width:100%;
+		}
 		.site-container{
 			margin:0 auto;
+			@include mobile{
+				width:100%;
+			}
 			.description, .quote{
 				display:block;
 				font-size:20px;
@@ -21,7 +27,7 @@ html{
 				text-align:center;
 				width:60%;
 				@include mobile{
-					width:80%;
+					width:95%;
 				}
 			}
 			.quote{
@@ -32,14 +38,23 @@ html{
 					margin:30px auto;
 					padding:20px;
 					width:80%;
+					@include mobile{
+						width:95%;
+					}
 					p{
 						font-size:30px;
 						line-height:1.5;
+						@include mobile{
+							font-size:20px;
+						}
 					}
 					.author{
 						p{
 							font-size:22px;
 							text-align:right;
+							@include mobile{
+								font-size:15px;
+							}
 						}
 					}
 				}
